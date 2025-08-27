@@ -2,6 +2,7 @@ from typing import List
 
 class Solution:
     def findDuplicates(self, arr: List[int]) -> List[int]:
+        arr = arr.copy()
         ans = []
         for i in arr:
             if arr[abs(i) - 1] < 0:

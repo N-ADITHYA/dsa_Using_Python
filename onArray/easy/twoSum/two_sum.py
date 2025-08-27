@@ -2,6 +2,7 @@ from typing import List
 
 class Solution:
     def two_sum(self, nums: List[int], target: int) -> List[int]:
+        nums = nums.copy()
         seen = {}
         for ind, num in enumerate(nums):
             complement = target - nums[ind]

@@ -5,6 +5,7 @@ from typing import List
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
+        prices = prices.copy()
         ans = 0
         j = 0
         for i in range(j+1, len(prices)):
