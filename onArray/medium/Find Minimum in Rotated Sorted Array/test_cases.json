@@ -1,0 +1,42 @@
+[
+  {
+    "input": {"arr": [5, 6, 1, 2, 3, 4]},
+    "output": 1
+  },
+  {
+    "input": {"arr": [3, 1, 2]},
+    "output": 1
+  },
+  {
+    "input": {"arr": [4, 2, 3]},
+    "output": 2
+  },
+  {
+    "input": {"arr": [1, 2, 3, 4, 5]},
+    "output": 1
+  },
+  {
+    "input": {"arr": [2, 3, 4, 5, 1]},
+    "output": 1
+  },
+  {
+    "input": {"arr": [10, 12, 15, 2, 5, 7, 8]},
+    "output": 2
+  },
+  {
+    "input": {"arr": [30, 40, 50, 10, 20]},
+    "output": 10
+  },
+  {
+    "input": {"arr": [7]},
+    "output": 7
+  },
+  {
+    "input": {"arr": [9, 1]},
+    "output": 1
+  },
+  {
+    "input": {"arr": [2, 3, 4, 5, 6, 7, 1]},
+    "output": 1
+  }
+]
