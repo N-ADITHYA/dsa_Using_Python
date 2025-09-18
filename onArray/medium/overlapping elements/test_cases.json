@@ -1,0 +1,37 @@
+[
+  {
+    "input": [[1,2],[2,3],[3,4],[1,3]],
+    "output": 1,
+    "explanation": "Remove [1,3], the rest are non-overlapping."
+  },
+  {
+    "input": [[1,2],[1,2],[1,2]],
+    "output": 2,
+    "explanation": "Keep one interval, remove the other two."
+  },
+  {
+    "input": [[1,2],[2,3]],
+    "output": 0,
+    "explanation": "Already non-overlapping."
+  },
+  {
+    "input": [[1,100],[11,22],[1,11],[2,12]],
+    "output": 2,
+    "explanation": "Best to remove [1,100] and one of the smaller overlaps."
+  },
+  {
+    "input": [[0,1],[3,4],[5,6],[7,8]],
+    "output": 0,
+    "explanation": "No overlaps at all."
+  },
+  {
+    "input": [[1,5],[2,3],[3,4],[4,6]],
+    "output": 2,
+    "explanation": "Optimal is keep [2,3] and [4,6] (or [3,4] and [4,6])."
+  },
+  {
+    "input": [[1,10],[2,9],[3,8],[4,7],[5,6]],
+    "output": 4,
+    "explanation": "Only one can be kept since all are nested."
+  }
+]
