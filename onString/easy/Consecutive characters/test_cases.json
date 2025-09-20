@@ -1,0 +1,62 @@
+[
+  {
+    "input": {
+      "s": "leetcode"
+    },
+    "output": 2
+  },
+  {
+    "input": {
+      "s": "abbcccddddeeeeedcba"
+    },
+    "output": 5
+  },
+  {
+    "input": {
+      "s": "triplepillooooow"
+    },
+    "output": 5
+  },
+  {
+    "input": {
+      "s": "hooraaaaaaaaaaay"
+    },
+    "output": 10
+  },
+  {
+    "input": {
+      "s": "tourist"
+    },
+    "output": 1
+  },
+  {
+    "input": {
+      "s": "aaabbbbcccccddddd"
+    },
+    "output": 5
+  },
+  {
+    "input": {
+      "s": "a"
+    },
+    "output": 1
+  },
+  {
+    "input": {
+      "s": "abcdeeeeee"
+    },
+    "output": 6
+  },
+  {
+    "input": {
+      "s": "zzzzzyyyyxxxx"
+    },
+    "output": 5
+  },
+  {
+    "input": {
+      "s": "aabbccddeeff"
+    },
+    "output": 2
+  }
+]
