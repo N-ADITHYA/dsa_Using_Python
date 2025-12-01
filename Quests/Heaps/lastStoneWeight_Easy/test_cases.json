@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "stones": [2, 7, 4, 1, 8, 1],
+      "expected": 1
+    },
+    {
+      "stones": [1],
+      "expected": 1
+    },
+    {
+      "stones": [3, 3],
+      "expected": 0
+    },
+    {
+      "stones": [10, 4, 2, 10],
+      "expected": 2
+    },
+    {
+      "stones": [1, 2, 3, 4, 5, 6],
+      "expected": 1
+    },
+    {
+      "stones": [9, 3, 2, 10, 7],
+      "expected": 1
+    },
+    {
+      "stones": [8, 8, 8, 8],
+      "expected": 0
+    },
+    {
+      "stones": [7, 6, 7, 6, 9],
+      "expected": 3
+    },
+    {
+      "stones": [50, 30, 20, 10],
+      "expected": 10
+    },
+    {
+      "stones": [1, 1, 1, 1, 1],
+      "expected": 1
+    }
+  ]
+}
