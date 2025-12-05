@@ -1,0 +1,79 @@
+{
+  "tests": [
+    {
+      "word": "USA",
+      "expected": true,
+      "reason": "All uppercase"
+    },
+    {
+      "word": "leetcode",
+      "expected": true,
+      "reason": "All lowercase"
+    },
+    {
+      "word": "Google",
+      "expected": true,
+      "reason": "First letter uppercase, rest lowercase"
+    },
+    {
+      "word": "FlaG",
+      "expected": false,
+      "reason": "Mixed capital usage"
+    },
+    {
+      "word": "ffffffffffffffffffffF",
+      "expected": false,
+      "reason": "Last letter uppercase, invalid pattern"
+    },
+    {
+      "word": "A",
+      "expected": true,
+      "reason": "Single uppercase letter"
+    },
+    {
+      "word": "a",
+      "expected": true,
+      "reason": "Single lowercase letter"
+    },
+    {
+      "word": "Aa",
+      "expected": true,
+      "reason": "Valid: first uppercase, second lowercase"
+    },
+    {
+      "word": "aA",
+      "expected": false,
+      "reason": "Invalid: lowercase then uppercase"
+    },
+    {
+      "word": "mL",
+      "expected": false,
+      "reason": "Invalid: lowercase then uppercase"
+    },
+    {
+      "word": "ML",
+      "expected": true,
+      "reason": "All uppercase"
+    },
+    {
+      "word": "Ml",
+      "expected": true,
+      "reason": "Only first uppercase"
+    },
+    {
+      "word": "mLqQ",
+      "expected": false,
+      "reason": "Proper case not followed"
+    },
+    {
+      "word": "ZZZz",
+      "expected": false,
+      "reason": "Invalid: lowercase after uppercase sequence"
+    },
+    {
+      "word": "Zzzzzzz",
+      "expected": true,
+      "reason": "First uppercase, rest lowercase"
+    }
+  ]
+}
