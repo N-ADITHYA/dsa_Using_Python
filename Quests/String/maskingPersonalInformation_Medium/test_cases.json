@@ -1,0 +1,62 @@
+[
+  {
+    "input": "LeetCode@LeetCode.com",
+    "output": "l*****e@leetcode.com"
+  },
+  {
+    "input": "AB@qq.com",
+    "output": "a*****b@qq.com"
+  },
+  {
+    "input": "A@b.com",
+    "output": "a*****a@b.com"
+  },
+  {
+    "input": "JOHN.DOE@LeetCode.COM",
+    "output": "j*****e@leetcode.com"
+  },
+  {
+    "input": "username@Domain.CoM",
+    "output": "u*****e@domain.com"
+  },
+  {
+    "input": "1(234)567-890",
+    "output": "***-***-7890"
+  },
+  {
+    "input": "1234567890",
+    "output": "***-***-7890"
+  },
+  {
+    "input": "+1(234)567-890",
+    "output": "+*-***-***-7890"
+  },
+  {
+    "input": "12-34-56-7890",
+    "output": "+**-***-***-7890"
+  },
+  {
+    "input": "+911234567890",
+    "output": "+**-***-***-7890 "
+  },
+  {
+    "input": "  (123) 456 7890  ",
+    "output": "***-***-7890 "
+  },
+  {
+    "input": "++1(234)567--890",
+    "output": "***-***-7890 "
+  },
+  {
+    "input": "(12)-(34)-(56)-(78)-(90)",
+    "output": "***-***-7890"
+  },
+  {
+    "input": "Email@Test.CoM",
+    "output": "e*****l@test.com"
+  },
+  {
+    "input": "e@d.com",
+    "output": "e*****e@d.com"
+  }
+]

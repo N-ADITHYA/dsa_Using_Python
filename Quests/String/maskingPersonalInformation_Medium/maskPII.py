@@ -1,23 +1,32 @@
 class Solution:
-    def detectCapitalUse(self, word: str) -> bool:
-        isFCaps = 0
-        isFFSmall = 0
-        isFFCaps = 0
+    def maskPII(self, s: str) -> str:
+        if "@" in s:
+            i = 0
+            ans = ""
+            ast = "*" * 5
 
-        for i, ch in enumerate(word):
-            if i == 0 and ch.isupper():
-                isFCaps = 1
-                isFFCaps += 1
+            while i < len(s):
+                if s[i] == "@":
+                    ans += s[0].lower() + ast + s[i - 1].lower()
+                    break
+                i += 1
+            ans += s[i:].lower()
+        else:
+            number = ""
+            ans = ""
+            sett = {'+', '-', '(', ')', ' '}
+            for i in range(len(s)):
+                if s[i] not in sett:
+                    number += s[i]
+            diff = len(number) - 10
+            template = ("*" * 3) + "-" + ("*" * 3) + "-" + number[6 + diff:len(number)]
+            if diff == 0:
+                ans += template
+            elif diff == 1:
+                ans += ("+*" + "-") + template
+            elif diff == 2:
+                ans += ("+**" + "-") + template
             else:
-                if ch.islower():
-                    isFFSmall += 1
-                elif ch.isupper():
-                    isFFCaps += 1
+                ans += ("+***" + "-") + template
+        return ans
 
-        if len(word) == isFFCaps:  # ALL CAPS
-            return True
-        elif len(word) == (isFCaps + isFFSmall):  # First caps + rest small
-            return True
-        elif len(word) == isFFSmall:  # all small
-            return True
-        return False
