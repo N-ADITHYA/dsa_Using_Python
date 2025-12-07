@@ -1,32 +1,23 @@
-ast = "*" * 5
+class Solution:
+    def detectCapitalUse(self, word: str) -> bool:
+        isFCaps = 0
+        isFFSmall = 0
+        isFFCaps = 0
 
-s = "Z@Y.Z"
-i = 0
-ans = ""
+        for i, ch in enumerate(word):
+            if i == 0 and ch.isupper():
+                isFCaps = 1
+                isFFCaps += 1
+            else:
+                if ch.islower():
+                    isFFSmall += 1
+                elif ch.isupper():
+                    isFFCaps += 1
 
-while i < len(s):
-    if s[i] == "@":
-        ans += s[0].lower() + ast + s[i-1].lower()
-        break
-    i += 1
-ans += s[i:].lower()
-
-s = "994402627)01(+2"
-sett = {'+', '-', '(', ')', ' '}
-number = ""
-ans = ""
-for i in range(len(s)):
-    if s[i] not in sett:
-        number += s[i]
-print(len(number))
-diff = len(number) - 10
-template = ("*" * 3) + "-" + ("*" * 3) + "-" + number[6+diff:len(number)]
-if diff == 0:
-    ans += template
-elif diff == 1:
-    ans += ("+*" + "-") + template
-elif diff == 2:
-    ans += ("+**" + "-") + template
-else:
-    ans += ("+***" + "-") + template
-print(ans)
+        if len(word) == isFFCaps:  # ALL CAPS
+            return True
+        elif len(word) == (isFCaps + isFFSmall):  # First caps + rest small
+            return True
+        elif len(word) == isFFSmall:  # all small
+            return True
+        return False
