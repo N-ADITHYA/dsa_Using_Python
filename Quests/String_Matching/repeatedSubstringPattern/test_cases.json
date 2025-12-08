@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "input": "abab",
+      "output": true,
+      "explanation": "Repeats 'ab'"
+    },
+    {
+      "input": "abcabc",
+      "output": true,
+      "explanation": "Repeats 'abc'"
+    },
+    {
+      "input": "aaaa",
+      "output": true,
+      "explanation": "Repeats 'a'"
+    },
+    {
+      "input": "aba",
+      "output": false,
+      "explanation": "No repeating substring"
+    },
+    {
+      "input": "abcab",
+      "output": false,
+      "explanation": "Length mismatch"
+    },
+    {
+      "input": "xyzxyzxyz",
+      "output": true,
+      "explanation": "Repeats 'xyz'"
+    },
+    {
+      "input": "a",
+      "output": false,
+      "explanation": "Single character cannot repeat"
+    },
+    {
+      "input": "abac",
+      "output": false,
+      "explanation": "Irregular pattern"
+    },
+    {
+      "input": "abababb",
+      "output": true,
+      "explanation": "Repeats 'ab'"
+    },
+    {
+      "input": "abcdefghijkl",
+      "output": false,
+      "explanation": "All unique, no repetition"
+    }
+  ]
+}
