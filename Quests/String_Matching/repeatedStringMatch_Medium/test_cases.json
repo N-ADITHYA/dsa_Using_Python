@@ -1,0 +1,52 @@
+[
+  {
+    "a": "abcd",
+    "b": "cdabcdab",
+    "expected": 3
+  },
+  {
+    "a": "a",
+    "b": "aa",
+    "expected": 2
+  },
+  {
+    "a": "abc",
+    "b": "cabcabca",
+    "expected": 4
+  },
+  {
+    "a": "abab",
+    "b": "abababab",
+    "expected": 2
+  },
+  {
+    "a": "abc",
+    "b": "def",
+    "expected": -1
+  },
+  {
+    "a": "abcd",
+    "b": "dabcdab",
+    "expected": 2
+  },
+  {
+    "a": "aa",
+    "b": "aaaaa",
+    "expected": 3
+  },
+  {
+    "a": "aba",
+    "b": "aababaab",
+    "expected": 4
+  },
+  {
+    "a": "abc",
+    "b": "abc",
+    "expected": 1
+  },
+  {
+    "a": "a",
+    "b": "",
+    "expected": 0
+  }
+]
