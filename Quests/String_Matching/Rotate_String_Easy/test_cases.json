@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "input": { "s": "abcde", "goal": "cdeab" },
+      "expected": true
+    },
+    {
+      "input": { "s": "abcde", "goal": "abced" },
+      "expected": false
+    },
+    {
+      "input": { "s": "a", "goal": "a" },
+      "expected": true
+    },
+    {
+      "input": { "s": "", "goal": "" },
+      "expected": true
+    },
+    {
+      "input": { "s": "aa", "goal": "aa" },
+      "expected": true
+    },
+    {
+      "input": { "s": "waterbottle", "goal": "erbottlewat" },
+      "expected": true
+    },
+    {
+      "input": { "s": "rotation", "goal": "tationro" },
+      "expected": true
+    },
+    {
+      "input": { "s": "rotation", "goal": "rationto" },
+      "expected": false
+    },
+    {
+      "input": { "s": "abcd", "goal": "dabc" },
+      "expected": true
+    },
+    {
+      "input": { "s": "abcd", "goal": "bdca" },
+      "expected": false
+    }
+  ]
+}
