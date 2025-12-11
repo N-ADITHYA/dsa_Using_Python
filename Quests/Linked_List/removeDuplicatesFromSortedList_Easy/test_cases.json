@@ -8,5 +8,35 @@
     "name": "multiple duplicates",
     "input": [1, 1,2,3,3],
     "expectedOutput": [1, 2, 3]
+  },
+  {
+    "name": "empty list",
+    "input": [],
+    "expectedOutput": []
+  },
+  {
+    "name": "single node",
+    "input": [7],
+    "expectedOutput": [7]
+  },
+  {
+    "name": "all duplicates",
+    "input": [4, 4, 4, 4],
+    "expectedOutput": [4]
+  },
+  {
+    "name": "no duplicates",
+    "input": [1, 2, 3, 4],
+    "expectedOutput": [1, 2, 3, 4]
+  },
+  {
+    "name": "duplicates spread out",
+    "input": [1, 1, 2, 2, 3, 4, 4],
+    "expectedOutput": [1, 2, 3, 4]
+  },
+  {
+    "name": "large increasing sequence",
+    "input": [1,1,1,2,3,3,4,5,5,5,6],
+    "expectedOutput": [1,2,3,4,5,6]
   }
 ]
