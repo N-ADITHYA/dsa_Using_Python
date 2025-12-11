@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "id": 1,
+      "input": [],
+      "description": "Empty list",
+      "expected": []
+    },
+    {
+      "id": 2,
+      "input": [1],
+      "description": "Single node list",
+      "expected": [1]
+    },
+    {
+      "id": 3,
+      "input": [1, 2],
+      "description": "Two nodes list",
+      "expected": [1, 2]
+    },
+    {
+      "id": 4,
+      "input": [1, 2, 3],
+      "description": "Odd number of nodes",
+      "expected": [1, 3, 2]
+    },
+    {
+      "id": 5,
+      "input": [1, 2, 3, 4],
+      "description": "Even number of nodes",
+      "expected": [1, 3, 2, 4]
+    },
+    {
+      "id": 6,
+      "input": [2, 1, 3, 5, 6, 4, 7],
+      "description": "LeetCode sample test case",
+      "expected": [2, 3, 6, 7, 1, 5, 4]
+    },
+    {
+      "id": 7,
+      "input": [10, 20, 30, 40, 50],
+      "description": "Strictly increasing values",
+      "expected": [10, 30, 50, 20, 40]
+    },
+    {
+      "id": 8,
+      "input": [5, 5, 5, 5],
+      "description": "All duplicates",
+      "expected": [5, 5, 5, 5]
+    },
+    {
+      "id": 9,
+      "input": [9, -1, 3, -5, 7],
+      "description": "Mixed positive and negative values",
+      "expected": [9, 3, 7, -1, -5]
+    },
+    {
+      "id": 10,
+      "input": [100, 200, 300, 400, 500, 600],
+      "description": "Even-length larger values",
+      "expected": [100, 300, 500, 200, 400, 600]
+    }
+  ]
+}
