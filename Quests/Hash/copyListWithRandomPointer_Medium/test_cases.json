@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "standard_case",
+      "input": [[7, null], [13, 0], [11, 4], [10, 2], [1, 0]],
+      "output": [[7, null], [13, 0], [11, 4], [10, 2], [1, 0]]
+    },
+    {
+      "name": "two_nodes_same_random",
+      "input": [[1, 1], [2, 1]],
+      "output": [[1, 1], [2, 1]]
+    },
+    {
+      "name": "duplicate_values",
+      "input": [[3, null], [3, 0], [3, null]],
+      "output": [[3, null], [3, 0], [3, null]]
+    },
+    {
+      "name": "empty_list",
+      "input": [],
+      "output": []
+    },
+    {
+      "name": "single_node_null_random",
+      "input": [[1, null]],
+      "output": [[1, null]]
+    },
+    {
+      "name": "single_node_self_random",
+      "input": [[1, 0]],
+      "output": [[1, 0]]
+    },
+    {
+      "name": "all_random_null",
+      "input": [[1, null], [2, null], [3, null]],
+      "output": [[1, null], [2, null], [3, null]]
+    },
+    {
+      "name": "all_random_to_head",
+      "input": [[1, null], [2, 0], [3, 0], [4, 0]],
+      "output": [[1, null], [2, 0], [3, 0], [4, 0]]
+    },
+    {
+      "name": "random_cycle",
+      "input": [[10, 1], [20, 2], [30, 0]],
+      "output": [[10, 1], [20, 2], [30, 0]]
+    },
+    {
+      "name": "backward_randoms",
+      "input": [[5, null], [6, 0], [7, 1], [8, 2]],
+      "output": [[5, null], [6, 0], [7, 1], [8, 2]]
+    }
+  ]
+}
