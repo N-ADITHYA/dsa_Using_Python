@@ -14,7 +14,7 @@ class Solution:
                     arr[val - 1] *= -1
                 elif arr[val - 1] == 0:
                     arr[val - 1] = -1 * (len(arr) + 1)
-        for i in range(1, len(arr) + 1):
-            if arr[i - 1] >= 0:
-                return 1
+        for k in range(1, len(arr) + 1):
+            if arr[k - 1] >= 0:
+                return k
         return len(arr) + 1
