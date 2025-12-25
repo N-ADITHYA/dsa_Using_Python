@@ -1,4 +1,3 @@
-from typing import List
 from minSubarray import Solution
 import json
 with open("test_cases.json") as f:
